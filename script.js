@@ -2,26 +2,20 @@ let title2 = document.getElementsByTagName("h1")[0];
 document.body.addEventListener("click", whenClicked);
 
 function whenClicked(e) {
-	let randomNumber = Math.floor(Math.random() * 149);
+	let randomNumber = Math.floor(Math.random() * 129);
 	let randoClr = randomColors[randomNumber];
 	let newColor = randoClr.replace(" ", "")
         document.body.style.backgroundColor = `${newColor}`;	
 	title2.innerText = `${randomColors[randomNumber]}`
+	
+	if(`${newColor}` == "black") {
+//		document.body.style.backgroundColor = "black"	
+		title2.style.color = "white" 
+	}
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-let randomColors = ["AliceBlue",
+let randomColors = ["Alice Blue",
   "Antique White",
   "Aqua",
   "Aquamarine",
@@ -50,19 +44,13 @@ let randomColors = ["AliceBlue",
   "Dark Green",
   "Dark Khaki",
   "Dark Magenta",
-  "Dark Olive Green",
   "Dark Orange",
   "Dark Orchid",
   "Dark Red",
   "Dark Salmon",
-  "Dark Sea Green",
-  "Dark Slate Blue",
-  "Dark Slate Gray",
-  "Dark Slate Grey",
   "Dark Turquoise",
   "Dark Violet",
   "Deep Pink",
-  "Deep Sky Blue",
   "Dim Gray",
   "Dim Grey",
   "Dodger Blue",
@@ -91,32 +79,21 @@ let randomColors = ["AliceBlue",
   "Light Blue",
   "Light Coral",
   "Light Cyan",
-  "Light GoldenRod Yellow",
   "Light Gray",
   "Light Grey",
   "Light Green",
   "Light Pink",
   "Light Salmon",
-  "Light Sea Green",
-  "Light Sky Blue",
-  "Light Slate Gray",
-  "Light Slate Grey",
-  "Light Steel Blue",
   "Light Yellow",
   "Lime",
   "Lime Green",
   "Linen",
   "Magenta",
   "Maroon",
-  "Medium Aqua Marine",
   "Medium Blue",
   "Medium Orchid",
   "Medium Purple",
-  "Medium Sea Green",
-  "Medium Slate Blue",
-  "Medium Spring Green",
   "Medium Turquoise",
-  "Medium Violet Red",
   "Midnight Blue",
   "Mint Cream",
   "Misty Rose",
@@ -129,10 +106,8 @@ let randomColors = ["AliceBlue",
   "Orange",
   "Orange Red",
   "Orchid",
-  "Pale Golden Rod",
   "Pale Green",
   "Pale Turquoise",
-  "Pale Violet Red",
   "Papaya Whip",
   "Peach Puff",
   "Peru",
@@ -170,3 +145,5 @@ let randomColors = ["AliceBlue",
   "Yellow",
   "Yellow Green",
 ];
+
+console.log(randomColors.length)
