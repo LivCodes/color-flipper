@@ -1,6 +1,7 @@
 body {
 	height: 1000px;
 	width: auto;
+	background-color: white;
 	font-family: 'Ephesis', cursive;
 	font-size: 50px;
 	        display: flex;
