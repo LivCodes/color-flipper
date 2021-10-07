@@ -1,0 +1,16 @@
+body {
+	height: 1000px;
+	width: auto;
+	background-color: green;
+	font-family: 'Ephesis', cursive;
+	font-size: 50px;
+	        display: flex;
+        justify-content: center; /* horizontal */
+        align-items: center;
+}
+
+#colorName {
+        display: flex;
+  	justify-content: center; /* horizontal */
+  	align-items: center;
+}
